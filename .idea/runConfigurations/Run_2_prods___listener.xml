@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run 2 prods + listener" type="CompoundRunConfigurationType">
+    <toRun name="be.bluexin.expanse.worker.example.ListenerKt" type="JetRunConfigurationType" />
+    <toRun name="be.bluexin.expanse.worker.example.UpdaterHpKt" type="JetRunConfigurationType" />
+    <toRun name="be.bluexin.expanse.worker.example.UpdaterPosKt" type="JetRunConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>
