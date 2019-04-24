@@ -21,6 +21,8 @@ dependencies {
     implementation(aeron("agent"))
     implementation("uk.co.real-logic", "sbe-tool", version("sbe"))
 
+    implementation("it.unimi.dsi", "fastutil", version("fastutil"))
+
     implementation("com.github.javafaker", "javafaker", version("javafaker"))
     implementation("com.fasterxml.jackson.module", "jackson-module-kotlin", version("jackson"))
 
@@ -33,7 +35,8 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         jvmTarget = "1.8"
-        freeCompilerArgs += "-Xuse-experimental=kotlin.Experimental"
+        @Suppress("SuspiciousCollectionReassignment")
+        freeCompilerArgs += listOf("-Xuse-experimental=kotlin.Experimental", "-XXLanguage:+InlineClasses")
     }
 }
 
